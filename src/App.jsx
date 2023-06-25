@@ -4,6 +4,7 @@ import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Skill from "./components/Skill";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <About />
       <Portfolio />
       <Skill />
+      <Contact />
     </>
   );
 }
