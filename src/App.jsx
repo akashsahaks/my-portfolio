@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Skill from "./components/Skill";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <SocialLinks />
       <About />
       <Portfolio />
+      <Skill />
     </>
   );
 }
