@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
     },
     {
       id: 4,
-      link: "Experience",
+      link: "Skills",
     },
     {
       id: 5,
@@ -28,10 +29,14 @@ const Navbar = () => {
   return (
     <>
       {/* Main container */}
-      <div className="w-full h-20 px-4 bg-black text-white fixed flex justify-between items-center">
+      <div className="w-full h-20 px-4 bg-black text-white  flex justify-between items-center sticky top-0 z-10">
         {/* signature - left*/}
         <div>
-          <h1 className="text-5xl font-signature ml-2">Akash</h1>
+          <h1 className="text-5xl font-signature ml-2 hover:cursor-pointer">
+            <Link to={"Home"} smooth duration={2500}>
+              Akash
+            </Link>
+          </h1>
         </div>
         {/* navitems - right */}
         <ul className="hidden md:flex ">
@@ -40,7 +45,9 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-200"
             >
-              {link}
+              <Link to={link} smooth duration={3000}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
