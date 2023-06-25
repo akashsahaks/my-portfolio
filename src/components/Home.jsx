@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImagae from "../assets/MyHeroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -18,11 +17,13 @@ const Home = () => {
 
             <p className="text-gray-500 py-4 max-w-md">
               Passionate Frontend developer with comprehensive training in HTML,
-              CSS, JavaScript, ES6, Bootstrap, TailwindCSS and ReactJS. Eager to
-              apply newly acquired skills to real-world projects and contribute
-              to a dynamic team. Seeking entry-level opportunities to kickstart
-              a successful career in frontend development.
+              CSS, JavaScript, ES6, Bootstrap, TailwindCSS, Jquery, ReactJS,
+              NodeJS, ExpressJS, MongoDB. Eager to apply newly acquired skills
+              to real-world projects and contribute to a dynamic team. Seeking
+              entry-level opportunities to kickstart a successful career in
+              frontend development.
             </p>
+
             <div>
               <button className="text-white cursor-pointer w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to to-blue-500 group ">
                 Portfolio
